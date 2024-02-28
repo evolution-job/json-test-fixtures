@@ -11,10 +11,13 @@ matrix:
   include:
     - php: 7.1
       env: COMPOSER_OPTIONS="--prefer-lowest --prefer-stable"
-    - php: 7.3
     - php: 7.2
       env: deps="high"
-
+    - php: 7.3
+    - php: 7.4
+    - php: 8.0
+    - php: 8.1
+    - php: 8.2
 before_install:
   - phpenv config-rm xdebug.ini
   - composer self-update
